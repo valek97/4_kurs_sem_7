@@ -1,6 +1,6 @@
 object fmEdit: TForm
   Left = 10
-  Top = 10
+  Top = 6
   HelpType = htKeyword
   HelpKeyword = 
     'AAAAAhQCEQVDTEFTUxEFVEZvcm0RBlBBUkFNUxQFEQhhdmlzaWJsZQURAXgGChEB' +
@@ -17,6 +17,7 @@ object fmEdit: TForm
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  PopupMenu = fmMain.editorPopup
   Position = poDesigned
   Visible = False
   PixelsPerInch = 96
@@ -1181,19 +1182,19 @@ object fmEdit: TForm
       070F1E3CA93C95165959FCDB5E9587DB930DE0C183070F1E3C787279FF078D4E
       92028BAE43B40000000049454E44AE426082}
   end
-  object chromium1: TScrollBox
-    Left = 8
-    Top = 8
-    Width = 496
-    Height = 496
+  object authVK: TScrollBox
+    Left = 0
+    Top = 496
+    Width = 512
+    Height = 528
     HelpType = htKeyword
     HelpKeyword = 
-      'AAAAAhQCEQVDTEFTUxELVENocm9taXVtRXgRBlBBUkFNUxQGEQhhdmlzaWJsZQUR' +
-      'CGFlbmFibGVkBREBdwxAcYAAAAAAABEBaAxAawAAAAAAABEGcGFyZW50FwVURm9y' +
-      'bRQGEQpjbGFzc19uYW1lDggRDwAqAF9jb25zdHJhaW50cxcQVFNpemVDb25zdHJh' +
-      'aW50cxQDDgkOCxEEc2VsZgoFr+wwEQgAKgBwcm9wcxQAEQcAKgBpY29uABEIACoA' +
-      'X2ZvbnQADgwKAHKuwA4NFAIOAwURCnBvc2l0aW9uZXgRCnBvRGVzaWduZWQRBHRl' +
-      'eHQRCUNocm9taXVtMQ=='
+      'AAAAAhQCEQVDTEFTUxELVENocm9taXVtRXgRBlBBUkFNUxQIEQhhdmlzaWJsZQUR' +
+      'CGFlbmFibGVkBREBdwgCABEBaAagEQZwYXJlbnQXBVRGb3JtFAYRCmNsYXNzX25h' +
+      'bWUOCBEPACoAX2NvbnN0cmFpbnRzFxBUU2l6ZUNvbnN0cmFpbnRzFAMOCQ4LEQRz' +
+      'ZWxmCgWv7DARCAAqAHByb3BzFAARBwAqAGljb24AEQgAKgBfZm9udAAODAoAcq7A' +
+      'Dg0UAg4DBREKcG9zaXRpb25leBEKcG9EZXNpZ25lZBEEdGV4dBEJQ2hyb21pdW0x' +
+      'EQF4BgARAXkIAWA='
     AutoScroll = False
     BevelKind = bkFlat
     BorderStyle = bsNone
@@ -1201,7 +1202,23 @@ object fmEdit: TForm
     ParentColor = False
     TabOrder = 0
     DesignSize = (
-      492
-      492)
+      508
+      524)
+  end
+  object button1: TBitBtn
+    Left = 176
+    Top = 232
+    Width = 144
+    Height = 32
+    HelpType = htKeyword
+    HelpKeyword = 
+      'AAAAAhQCEQVDTEFTUxEHVEJpdEJ0bhEGUEFSQU1TFAYRCGF2aXNpYmxlBREIYWVu' +
+      'YWJsZWQFEQF3DEBiAAAAAAAAEQFoDEBAAAAAAAAAEQZwYXJlbnQXBVRGb3JtFAYR' +
+      'CmNsYXNzX25hbWUOCBEPACoAX2NvbnN0cmFpbnRzFxBUU2l6ZUNvbnN0cmFpbnRz' +
+      'FAMOCQ4LEQRzZWxmCgWw7jgRCAAqAHByb3BzFAARBwAqAGljb24AEQgAKgBfZm9u' +
+      'dAAODAoANaRwDg0UAg4DBREKcG9zaXRpb25leBEKcG9EZXNpZ25lZBEEdGV4dBEH' +
+      'yu3u7+rgMQ=='
+    Caption = #1040#1074#1090#1086#1088#1080#1079#1072#1094#1080#1103' '#1042#1050
+    TabOrder = 1
   end
 end
