@@ -1,6 +1,6 @@
 object fmEdit: TForm
   Left = 10
-  Top = 6
+  Top = 10
   HelpType = htKeyword
   HelpKeyword = 
     'AAAAAhQCEQVDTEFTUxEFVEZvcm0RBlBBUkFNUxQFEQhhdmlzaWJsZQURAXgGChEB' +
