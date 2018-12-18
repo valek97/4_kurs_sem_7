@@ -74,14 +74,17 @@ class VK{
 class Profile{
 	
 	function User($uid){
-		$user = VK::request('users.get', 'user_id=61943436&fields=photo_100,bdate,city,country,followers_count,online,online_mobile,contacts,connections,status,last_seen,counters,sex&v=5.92'););
+        $uid= c("uId")->text;;
+        
+		$user = VK::request('users.get', 'user_id=' . $uid.'&fields=photo_100,bdate,city,country,followers_count,online,online_mobile,contacts,connections,status,last_seen,counters,sex&v=5.92');
 		if(!$user){
 			messageDlg("Не удалось получить информацию о пользователе!", mtConfirmation, MB_OK);
 		}else{
 			pre($user);
-			c('User->imageUser')->loadFromUrl($user['response']['0']['photo_100']);
+			
 			c('User->firstName')->caption = iconv('UTF-8', 'cp1251', $user['response']['0']['first_name']);
 			c('User->lastName')->caption = iconv('UTF-8', 'cp1251', $user['response']['0']['last_name']);
+            c('User->bDate')->caption = iconv('UTF-8', 'cp1251', $user['response']['0']['bdate']);
 			c('User->status')->text = iconv('UTF-8', 'cp1251', $user['response']['0']['status']);
 			LoadForm(c("User"), LD_NONE);
 		}
