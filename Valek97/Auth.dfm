@@ -17,6 +17,7 @@ object fmEdit: TForm
   Font.Name = 'Segoe UI'
   Font.Style = []
   OldCreateOrder = False
+  PopupMenu = fmMain.editorPopup
   Position = poDesigned
   Visible = False
   PixelsPerInch = 96
