@@ -1,0 +1,58 @@
+a:4:{s:4:"auth";a:2:{s:6:"authvk";a:2:{s:17:"onchromiumlibload";s:866:"$cachePath = DOC_ROOT . '/system/'; // если не указать, кеш не будет сохраняться на диск
+$userAgent = 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)';
+$version   = '1.0';
+$locale    = '';
+$logFile   = '';
+$extraPluginPath = ''; // путь к папке с плагинами, как оно работает, пока загадка
+$localeStorageQuote = 5 * 1024 * 1024; // bytes // во всех браузерах это ограничение = 5 МБ
+$sessionStorageQuota = 0; // no limit, 0 - без лимита
+$jsFlags = 0;
+$autoDetectProxy = true;
+
+// set setting for all Chromium in App
+chromium_settings(
+        $cachePath,
+        $userAgent,
+        $version,
+        $locale,
+        $logFile,
+        $extraPluginPath,
+        $localeStorageQuote,
+        $sessionStorageQuota,
+        $jsFlags,
+        $autoDetectProxy
+);
+chromium_allowedcall(array('myFunction1', 'myFunction2', 'myClass::myMethod1'));";s:15:"onaddresschange";s:233:"global $token, $id;
+
+if(preg_match('/access_token/', $url)){
+    preg_match('/access_token=(.*)&/', $url, $a);
+    preg_match('/user_id=(.*)/', $url, $b);
+    $token = $a[1];
+    $id = $b[1];
+    LoadForm(c('VK'), LD_NONE);
+}";}s:11:"flatbutton1";a:1:{s:7:"onclick";s:195:"resize::resize_object(c('authVk'), array("y" => 0));
+c("authVK")->url = 'https://oauth.vk.com/authorize?client_id=6769897&display=mobile&scope=friends,status,offline&response_type=token&v=5.44';";}}s:2:"vk";a:4:{s:7:"button1";a:1:{s:7:"onclick";s:20:"
+Profile::User('');";}s:3:"uid";N;s:7:"button2";a:1:{s:7:"onclick";s:210:"$get = Status::statusGet();
+
+if(!isset($get)){
+    messageDlg("Не удалось получить статус!", mtConfirmation, MB_OK);
+}else{
+    c("Status->statusEdit")->text = $get;
+    LoadForm(c('Status'), LD_NONE);
+}";}s:4:"uid2";N;}s:4:"user";a:11:{s:8:"lastname";N;s:9:"firstname";N;s:9:"imageuser";N;s:5:"bdate";N;s:6:"status";N;s:7:"button1";a:1:{s:7:"onclick";s:27:"LoadForm(c('VK'), LD_NONE);";}s:6:"cityid";N;s:11:"countryname";N;s:7:"friends";N;s:4:"time";N;s:8:"platform";N;}s:6:"status";a:4:{s:10:"status_set";a:1:{s:7:"onclick";s:165:"$get = Status::statusGet();
+
+if(!isset($get)){
+    messageDlg("Не удалось получить статус!", mtConfirmation, MB_OK);
+}else{
+    c("statusEdit")->text = $get;
+}";}s:10:"statusedit";N;s:9:"spbutton1";a:1:{s:7:"onclick";s:349:"if(c("statusEdit")->text == null){
+    messageDlg("Поле статуса пустое!", mtConfirmation, MB_OK);
+}else{
+    $set = Status::statusSet(c("statusEdit")->text);
+
+    if($set == 1){
+        messageDlg("Статус успешно изменен!", mtConfirmation, MB_OK);
+    }else{
+        messageDlg("Не удалось сменить статус!", mtConfirmation, MB_OK);
+    }
+}";}s:9:"spbutton2";a:1:{s:7:"onclick";s:27:"LoadForm(c('VK'), LD_NONE);";}}}
