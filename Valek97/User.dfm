@@ -17,7 +17,6 @@ object fmEdit: TForm
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  PopupMenu = fmMain.editorPopup
   Position = poDesigned
   Visible = False
   PixelsPerInch = 96
@@ -50,6 +49,7 @@ object fmEdit: TForm
       'ZgoHl9NoEQgAKgBwcm9wcxQAEQcAKgBpY29uABEIACoAX2ZvbnQADg0KAJOhAA4O' +
       'FAIOAwURCnBvc2l0aW9uZXgRCnBvRGVzaWduZWQRBHRleHQRDMjn7uHw4Obl7ejl' +
       'MQ=='
+    Proportional = True
   end
   object firstName: TLabel
     Left = 144

@@ -85,7 +85,7 @@ object fmEdit: TForm
     Left = 16
     Top = 40
     Width = 344
-    Height = 53
+    Height = 21
     HelpType = htKeyword
     HelpKeyword = 
       'AAAAAhQCEQVDTEFTUxEFVEVkaXQRBlBBUkFNUxQFEQhhdmlzaWJsZQURCGFlbmFi' +
