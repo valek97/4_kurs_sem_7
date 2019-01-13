@@ -3,13 +3,13 @@ object fmEdit: TForm
   Top = 10
   HelpType = htKeyword
   HelpKeyword = 
-    'AAAAAhQCEQVDTEFTUxEFVEZvcm0RBlBBUkFNUxQDEQhhdmlzaWJsZQURAXgGChEB' +
-    'eQYK'
+    'AAAAAhQCEQVDTEFTUxEFVEZvcm0RBlBBUkFNUxQFEQhhdmlzaWJsZQURAXgGChEB' +
+    'eQYKEQF3CAGAEQFoBtg='
   BorderIcons = []
   BorderStyle = bsSizeable
   Caption = 'Valek97'
-  ClientHeight = 400
-  ClientWidth = 500
+  ClientHeight = 216
+  ClientWidth = 384
   Color = 15132390
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -22,7 +22,7 @@ object fmEdit: TForm
   PixelsPerInch = 96
   TextHeight = 13
   object lastName: TLabel
-    Left = 144
+    Left = 216
     Top = 48
     Width = 49
     Height = 13
@@ -49,10 +49,9 @@ object fmEdit: TForm
       'ZgoHl9NoEQgAKgBwcm9wcxQAEQcAKgBpY29uABEIACoAX2ZvbnQADg0KAJOhAA4O' +
       'FAIOAwURCnBvc2l0aW9uZXgRCnBvRGVzaWduZWQRBHRleHQRDMjn7uHw4Obl7ejl' +
       'MQ=='
-    Proportional = True
   end
   object firstName: TLabel
-    Left = 144
+    Left = 216
     Top = 24
     Width = 51
     Height = 13
@@ -67,7 +66,7 @@ object fmEdit: TForm
     Caption = 'first_name'
   end
   object bDate: TLabel
-    Left = 144
+    Left = 216
     Top = 80
     Width = 34
     Height = 13
@@ -82,7 +81,7 @@ object fmEdit: TForm
     Caption = 'b_date'
   end
   object cityId: TLabel
-    Left = 144
+    Left = 216
     Top = 104
     Width = 33
     Height = 13
@@ -97,7 +96,7 @@ object fmEdit: TForm
     Caption = 'city_Id'
   end
   object countryName: TLabel
-    Left = 144
+    Left = 216
     Top = 128
     Width = 70
     Height = 13
@@ -112,8 +111,8 @@ object fmEdit: TForm
     Caption = 'country_Name'
   end
   object friends: TLabel
-    Left = 144
-    Top = 160
+    Left = 216
+    Top = 152
     Width = 33
     Height = 13
     HelpType = htKeyword
@@ -126,39 +125,105 @@ object fmEdit: TForm
       '5erx8jERAXgGkBEBeQaI'
     Caption = 'friends'
   end
-  object time: TLabel
-    Left = 144
-    Top = 176
-    Width = 20
-    Height = 13
+  object label1: TLabel
+    Left = 136
+    Top = 24
+    Width = 80
+    Height = 24
     HelpType = htKeyword
     HelpKeyword = 
-      'AAAAAhQCEQVDTEFTUxEGVExhYmVsEQZQQVJBTVMUCBEIYXZpc2libGUFEQhhZW5h' +
-      'YmxlZAURAXcMQFIAAAAAAAARAWgMQDgAAAAAAAARBnBhcmVudBcFVEZvcm0UBhEK' +
+      'AAAAAhQCEQVDTEFTUxEGVExhYmVsEQZQQVJBTVMUBhEIYXZpc2libGUFEQhhZW5h' +
+      'YmxlZAURAXcMQFQAAAAAAAARAWgMQDgAAAAAAAARBnBhcmVudBcFVEZvcm0UBhEK' +
       'Y2xhc3NfbmFtZQ4IEQ8AKgBfY29uc3RyYWludHMXEFRTaXplQ29uc3RyYWludHMU' +
-      'Aw4JDgsRBHNlbGYKB2kfiBEIACoAcHJvcHMUABEHACoAaWNvbgARCAAqAF9mb250' +
-      'AA4MCgBwPVAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
-      '5erx8jERAXgGmBEBeQao'
-    Caption = 'time'
+      'Aw4JDgsRBHNlbGYKBbVlyBEIACoAcHJvcHMUABEHACoAaWNvbgARCAAqAF9mb250' +
+      'AA4MCgH6oQAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
+      '5erx8jE='
+    AutoSize = False
+    Caption = #1060#1072#1084#1080#1083#1080#1103
   end
-  object platform: TLabel
-    Left = 144
-    Top = 200
-    Width = 40
-    Height = 13
+  object label2: TLabel
+    Left = 136
+    Top = 48
+    Width = 80
+    Height = 24
     HelpType = htKeyword
     HelpKeyword = 
-      'AAAAAhQCEQVDTEFTUxEGVExhYmVsEQZQQVJBTVMUCBEIYXZpc2libGUFEQhhZW5h' +
-      'YmxlZAURAXcMQFIAAAAAAAARAWgMQDgAAAAAAAARBnBhcmVudBcFVEZvcm0UBhEK' +
+      'AAAAAhQCEQVDTEFTUxEGVExhYmVsEQZQQVJBTVMUBhEIYXZpc2libGUFEQhhZW5h' +
+      'YmxlZAURAXcMQFQAAAAAAAARAWgMQDgAAAAAAAARBnBhcmVudBcFVEZvcm0UBhEK' +
       'Y2xhc3NfbmFtZQ4IEQ8AKgBfY29uc3RyYWludHMXEFRTaXplQ29uc3RyYWludHMU' +
-      'Aw4JDgsRBHNlbGYKB2kfiBEIACoAcHJvcHMUABEHACoAaWNvbgARCAAqAF9mb250' +
-      'AA4MCgBwPVAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
-      '5erx8jERAXgGmBEBeQao'
-    Caption = 'platform'
+      'Aw4JDgsRBHNlbGYKBbVlyBEIACoAcHJvcHMUABEHACoAaWNvbgARCAAqAF9mb250' +
+      'AA4MCgH6oQAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
+      '5erx8jI='
+    AutoSize = False
+    Caption = #1048#1084#1103
+  end
+  object label3: TLabel
+    Left = 136
+    Top = 72
+    Width = 80
+    Height = 24
+    HelpType = htKeyword
+    HelpKeyword = 
+      'AAAAAhQCEQVDTEFTUxEGVExhYmVsEQZQQVJBTVMUBhEIYXZpc2libGUFEQhhZW5h' +
+      'YmxlZAURAXcMQFQAAAAAAAARAWgMQDgAAAAAAAARBnBhcmVudBcFVEZvcm0UBhEK' +
+      'Y2xhc3NfbmFtZQ4IEQ8AKgBfY29uc3RyYWludHMXEFRTaXplQ29uc3RyYWludHMU' +
+      'Aw4JDgsRBHNlbGYKBbVlyBEIACoAcHJvcHMUABEHACoAaWNvbgARCAAqAF9mb250' +
+      'AA4MCgH6oQAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
+      '5erx8jM='
+    AutoSize = False
+    Caption = #1054#1090#1095#1077#1089#1090#1074#1086
+  end
+  object label4: TLabel
+    Left = 136
+    Top = 104
+    Width = 80
+    Height = 24
+    HelpType = htKeyword
+    HelpKeyword = 
+      'AAAAAhQCEQVDTEFTUxEGVExhYmVsEQZQQVJBTVMUBhEIYXZpc2libGUFEQhhZW5h' +
+      'YmxlZAURAXcMQFQAAAAAAAARAWgMQDgAAAAAAAARBnBhcmVudBcFVEZvcm0UBhEK' +
+      'Y2xhc3NfbmFtZQ4IEQ8AKgBfY29uc3RyYWludHMXEFRTaXplQ29uc3RyYWludHMU' +
+      'Aw4JDgsRBHNlbGYKBbVlyBEIACoAcHJvcHMUABEHACoAaWNvbgARCAAqAF9mb250' +
+      'AA4MCgH6oQAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
+      '5erx8jQ='
+    AutoSize = False
+    Caption = #1057#1090#1088#1072#1085#1072
+  end
+  object label5: TLabel
+    Left = 136
+    Top = 128
+    Width = 80
+    Height = 24
+    HelpType = htKeyword
+    HelpKeyword = 
+      'AAAAAhQCEQVDTEFTUxEGVExhYmVsEQZQQVJBTVMUBhEIYXZpc2libGUFEQhhZW5h' +
+      'YmxlZAURAXcMQFQAAAAAAAARAWgMQDgAAAAAAAARBnBhcmVudBcFVEZvcm0UBhEK' +
+      'Y2xhc3NfbmFtZQ4IEQ8AKgBfY29uc3RyYWludHMXEFRTaXplQ29uc3RyYWludHMU' +
+      'Aw4JDgsRBHNlbGYKBbVlyBEIACoAcHJvcHMUABEHACoAaWNvbgARCAAqAF9mb250' +
+      'AA4MCgH6oQAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
+      '5erx8jU='
+    AutoSize = False
+    Caption = #1043#1086#1088#1086#1076
+  end
+  object label6: TLabel
+    Left = 136
+    Top = 152
+    Width = 80
+    Height = 24
+    HelpType = htKeyword
+    HelpKeyword = 
+      'AAAAAhQCEQVDTEFTUxEGVExhYmVsEQZQQVJBTVMUBhEIYXZpc2libGUFEQhhZW5h' +
+      'YmxlZAURAXcMQFQAAAAAAAARAWgMQDgAAAAAAAARBnBhcmVudBcFVEZvcm0UBhEK' +
+      'Y2xhc3NfbmFtZQ4IEQ8AKgBfY29uc3RyYWludHMXEFRTaXplQ29uc3RyYWludHMU' +
+      'Aw4JDgsRBHNlbGYKBbVlyBEIACoAcHJvcHMUABEHACoAaWNvbgARCAAqAF9mb250' +
+      'AA4MCgH6oQAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
+      '5erx8jY='
+    AutoSize = False
+    Caption = #1050#1086#1083' '#1076#1088#1091#1079#1077#1081
   end
   object status: TEdit
     Left = 128
-    Top = 224
+    Top = 184
     Width = 248
     Height = 21
     HelpType = htKeyword
@@ -177,10 +242,10 @@ object fmEdit: TForm
     MarginRight = 0
   end
   object button1: TBitBtn
-    Left = 56
-    Top = 336
-    Width = 152
-    Height = 40
+    Left = 8
+    Top = 184
+    Width = 112
+    Height = 24
     HelpType = htKeyword
     HelpKeyword = 
       'AAAAAhQCEQVDTEFTUxEHVEJpdEJ0bhEGUEFSQU1TFAYRCGF2aXNpYmxlBREIYWVu' +

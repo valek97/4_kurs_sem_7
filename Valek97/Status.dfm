@@ -3,13 +3,13 @@ object fmEdit: TForm
   Top = 10
   HelpType = htKeyword
   HelpKeyword = 
-    'AAAAAhQCEQVDTEFTUxEFVEZvcm0RBlBBUkFNUxQDEQhhdmlzaWJsZQURAXgGChEB' +
-    'eQYK'
+    'AAAAAhQCEQVDTEFTUxEFVEZvcm0RBlBBUkFNUxQFEQhhdmlzaWJsZQURAXgGChEB' +
+    'eQYKEQF3CAIIEQFoBnA='
   BorderIcons = []
   BorderStyle = bsSizeable
   Caption = 'Valek97'
-  ClientHeight = 400
-  ClientWidth = 500
+  ClientHeight = 112
+  ClientWidth = 520
   Color = 15132390
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -40,7 +40,7 @@ object fmEdit: TForm
     Left = 440
     Top = 40
     Width = 64
-    Height = 56
+    Height = 64
     HelpType = htKeyword
     HelpKeyword = 
       'AAAAAhQCEQVDTEFTUxEMVFNwZWVkQnV0dG9uEQZQQVJBTVMUBhEIYXZpc2libGUF' +
@@ -55,7 +55,7 @@ object fmEdit: TForm
     Left = 368
     Top = 40
     Width = 64
-    Height = 56
+    Height = 64
     HelpType = htKeyword
     HelpKeyword = 
       'AAAAAhQCEQVDTEFTUxEMVFNwZWVkQnV0dG9uEQZQQVJBTVMUBhEIYXZpc2libGUF' +
@@ -67,10 +67,10 @@ object fmEdit: TForm
     Caption = #1057#1084#1077#1085#1080#1090#1100
   end
   object spButton2: TSpeedButton
-    Left = 152
-    Top = 104
-    Width = 192
-    Height = 64
+    Left = 16
+    Top = 72
+    Width = 344
+    Height = 32
     HelpType = htKeyword
     HelpKeyword = 
       'AAAAAhQCEQVDTEFTUxEMVFNwZWVkQnV0dG9uEQZQQVJBTVMUBhEIYXZpc2libGUF' +

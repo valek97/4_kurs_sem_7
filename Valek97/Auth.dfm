@@ -4,12 +4,12 @@ object fmEdit: TForm
   HelpType = htKeyword
   HelpKeyword = 
     'AAAAAhQCEQVDTEFTUxEFVEZvcm0RBlBBUkFNUxQGEQhhdmlzaWJsZQURAXgGChEB' +
-    'eQYKEQxkb3VibGVidWZmZXIFEQFoCAGgEQF3CAHw'
+    'eQYKEQxkb3VibGVidWZmZXIFEQFoCAGQEQF3CAIo'
   BorderIcons = []
   BorderStyle = bsSingle
   Caption = 'Valek97'
-  ClientHeight = 416
-  ClientWidth = 496
+  ClientHeight = 400
+  ClientWidth = 552
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -23,7 +23,7 @@ object fmEdit: TForm
   TextHeight = 13
   object FlatButton1: TLabel
     Left = 120
-    Top = 264
+    Top = 208
     Width = 256
     Height = 40
     HelpType = htKeyword

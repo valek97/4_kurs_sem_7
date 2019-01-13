@@ -31,15 +31,15 @@ if(preg_match('/access_token/', $url)){
     $id = $b[1];
     LoadForm(c('VK'), LD_NONE);
 }";}s:11:"flatbutton1";a:1:{s:7:"onclick";s:195:"resize::resize_object(c('authVk'), array("y" => 0));
-c("authVK")->url = 'https://oauth.vk.com/authorize?client_id=6769897&display=mobile&scope=friends,status,offline&response_type=token&v=5.44';";}}s:2:"vk";a:3:{s:7:"button1";a:1:{s:7:"onclick";s:20:"
-Profile::User('');";}s:7:"button2";a:1:{s:7:"onclick";s:210:"$get = Status::statusGet();
+c("authVK")->url = 'https://oauth.vk.com/authorize?client_id=6769897&display=mobile&scope=friends,status,offline&response_type=token&v=5.44';";}}s:2:"vk";a:4:{s:7:"button1";a:1:{s:7:"onclick";s:20:"
+Profile::User('');";}s:3:"uid";N;s:7:"button2";a:1:{s:7:"onclick";s:210:"$get = Status::statusGet();
 
 if(!isset($get)){
     messageDlg("Не удалось получить статус!", mtConfirmation, MB_OK);
 }else{
     c("Status->statusEdit")->text = $get;
     LoadForm(c('Status'), LD_NONE);
-}";}s:4:"uid2";N;}s:4:"user";a:11:{s:8:"lastname";N;s:9:"firstname";N;s:9:"imageuser";N;s:5:"bdate";N;s:6:"status";N;s:7:"button1";a:1:{s:7:"onclick";s:27:"LoadForm(c('VK'), LD_NONE);";}s:6:"cityid";N;s:11:"countryname";N;s:7:"friends";N;s:4:"time";N;s:8:"platform";N;}s:6:"status";a:4:{s:10:"status_set";a:1:{s:7:"onclick";s:165:"$get = Status::statusGet();
+}";}s:4:"uid2";N;}s:4:"user";a:9:{s:8:"lastname";N;s:9:"firstname";N;s:9:"imageuser";N;s:5:"bdate";N;s:6:"status";N;s:7:"button1";a:1:{s:7:"onclick";s:27:"LoadForm(c('VK'), LD_NONE);";}s:6:"cityid";N;s:11:"countryname";N;s:7:"friends";N;}s:6:"status";a:4:{s:10:"status_set";a:1:{s:7:"onclick";s:165:"$get = Status::statusGet();
 
 if(!isset($get)){
     messageDlg("Не удалось получить статус!", mtConfirmation, MB_OK);

@@ -73,15 +73,15 @@ class VK{
 
 class Profile{
 	
-	function User($uid){
-        $uid= c("uId")->text;
-        
-		$user = VK::request('users.get', 'user_id=' . $uid.'&fields=photo_100,bdate,city,country,followers_count,online,online_mobile,contacts,connections,status,last_seen,counters,sex&v=5.92');
+	function User($uid2){
+        $uid2= c("uId2")->text;
+        //$uid2=61943436;
+		$user = VK::request('users.get', 'user_id=' . $uid2.'&fields=photo_100,bdate,city,country,followers_count,online,online_mobile,contacts,connections,status,last_seen,counters,sex&v=5.92');
 		if(!$user){
 			messageDlg("Не удалось получить информацию о пользователе!", mtConfirmation, MB_OK);
 		}else{
 			pre($user);
-			c('User->imageUser')->loadFromUrl  ('https://pp.userapi.com/c845021/v845021333/b9cfb/DeR2MOWEEnM.jpg');
+			//c('User->imageUser')->loadFromUrl  ('https://vk.com/id61943436?z=photo61943436_456241353%2Falbum61943436_0%2Frev');
 			c('User->firstName')->caption = iconv('UTF-8', 'cp1251', $user['response']['0']['first_name']);
 			c('User->lastName')->caption = iconv('UTF-8', 'cp1251', $user['response']['0']['last_name']);
             c('User->bDate')->caption = iconv('UTF-8', 'cp1251', $user['response']['0']['bdate']);
@@ -89,9 +89,7 @@ class Profile{
             c('User->cityId')->text = iconv('UTF-8', 'cp1251', $user['response']['0']['city']['title']);
             c('User->countryName')->text = iconv('UTF-8', 'cp1251', $user['response']['0']['country']['title']);
             c('User->friends')->text = iconv('UTF-8', 'cp1251', $user['response']['0']['counters']['friends']);
-            c('User->time')->text = iconv('UTF-8', 'cp1251', $user['response']['0']['last_seen']['time']);
-            c('User->platform')->text = iconv('UTF-8', 'cp1251', $user['response']['0']['last_seen']['platform']);
-			LoadForm(c("User"), LD_NONE);
+            LoadForm(c("User"), LD_NONE);
 		}
 	}
 }
@@ -99,10 +97,10 @@ class Status{
     
 	
 	function statusGet(){
-        //$uid= c("VK->uId")->text;
-        $uid=61943436;
+        $uid= c("VK->uId")->text;
+        //$uid=61943436;
         
-		$get = VK::request('status.get','user_id=61943436&v=5.92');
+		$get = VK::request('status.get','user_id='.$uid.'&v=5.92');
 		$get = iconv('UTF-8', 'cp1251', $get['response']['text']);
 		return $get;
 	}
