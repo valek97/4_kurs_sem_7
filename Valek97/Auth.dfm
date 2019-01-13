@@ -4,12 +4,12 @@ object fmEdit: TForm
   HelpType = htKeyword
   HelpKeyword = 
     'AAAAAhQCEQVDTEFTUxEFVEZvcm0RBlBBUkFNUxQGEQhhdmlzaWJsZQURAXgGChEB' +
-    'eQYKEQxkb3VibGVidWZmZXIFEQFoCAGQEQF3CAIo'
+    'eQYKEQxkb3VibGVidWZmZXIFEQFoCAE4EQF3CAHo'
   BorderIcons = []
   BorderStyle = bsSingle
   Caption = 'Valek97'
-  ClientHeight = 400
-  ClientWidth = 552
+  ClientHeight = 312
+  ClientWidth = 488
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

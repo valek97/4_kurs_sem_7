@@ -22,7 +22,7 @@ object fmEdit: TForm
   PixelsPerInch = 96
   TextHeight = 13
   object lastName: TLabel
-    Left = 216
+    Left = 248
     Top = 48
     Width = 49
     Height = 13
@@ -51,7 +51,7 @@ object fmEdit: TForm
       'MQ=='
   end
   object firstName: TLabel
-    Left = 216
+    Left = 248
     Top = 24
     Width = 51
     Height = 13
@@ -66,7 +66,7 @@ object fmEdit: TForm
     Caption = 'first_name'
   end
   object bDate: TLabel
-    Left = 216
+    Left = 248
     Top = 80
     Width = 34
     Height = 13
@@ -81,8 +81,8 @@ object fmEdit: TForm
     Caption = 'b_date'
   end
   object cityId: TLabel
-    Left = 216
-    Top = 104
+    Left = 248
+    Top = 128
     Width = 33
     Height = 13
     HelpType = htKeyword
@@ -96,8 +96,8 @@ object fmEdit: TForm
     Caption = 'city_Id'
   end
   object countryName: TLabel
-    Left = 216
-    Top = 128
+    Left = 248
+    Top = 104
     Width = 70
     Height = 13
     HelpType = htKeyword
@@ -111,7 +111,7 @@ object fmEdit: TForm
     Caption = 'country_Name'
   end
   object friends: TLabel
-    Left = 216
+    Left = 248
     Top = 152
     Width = 33
     Height = 13
@@ -159,7 +159,7 @@ object fmEdit: TForm
   end
   object label3: TLabel
     Left = 136
-    Top = 72
+    Top = 80
     Width = 80
     Height = 24
     HelpType = htKeyword
@@ -171,7 +171,7 @@ object fmEdit: TForm
       'AA4MCgH6oQAODRQCDgMFEQpwb3NpdGlvbmV4EQpwb0Rlc2lnbmVkEQR0ZXh0EQbS' +
       '5erx8jM='
     AutoSize = False
-    Caption = #1054#1090#1095#1077#1089#1090#1074#1086
+    Caption = #1044#1072#1090#1072' '#1088#1086#1078#1076#1077#1085#1080#1103
   end
   object label4: TLabel
     Left = 136
